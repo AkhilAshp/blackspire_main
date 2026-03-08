@@ -25,12 +25,13 @@ export const VENTURES = {
     { icon: "⬡", name: "GODZ", desc: "Mythical digital world." },
   ],
   "Trust Infrastructure": [
-    { icon: "⍟", name: "Ewipe Verify", desc: "Digital verification infrastructure." },
+    { icon: "⍟", name: "GTOS", desc: "Digital verification infrastructure." },
   ],
   "Community Platforms": [
     { icon: "◈", name: "Dragon's Den", desc: "Student innovation ecosystem." },
     { icon: "✦", name: "HerTale", desc: "Community experience platform." },
     { icon: "◎", name: "Heartely", desc: "Human connection platform." },
+    { icon: "⬢", name: "Atlas One", desc: "Community platform." },
   ],
 };
 
