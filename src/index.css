@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Share+Tech+Mono&family=Rajdhani:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-orbitron: "Orbitron", sans-serif;
+  --font-mono: "Share Tech Mono", monospace;
+  --font-rajdhani: "Rajdhani", sans-serif;
+
+  --color-bg-deep: #04080F;
+  --color-bg-mid: #07101C;
+  --color-cyan-accent: #00F5D4;
+  --color-cyan-dim: #00C9AE;
+  --color-text-primary: #E8F4F8;
+  --color-text-secondary: #7BA8B8;
+  --color-text-muted: #3D6070;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-deep text-text-primary font-rajdhani overflow-x-hidden;
+    background-image:
+      linear-gradient(rgba(0, 245, 212, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(0, 245, 212, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+    background-attachment: fixed;
+  }
+
+  body::after {
+    content: '';
+    position: fixed;
+    top: -200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 900px;
+    height: 600px;
+    background: radial-gradient(ellipse, rgba(0, 245, 212, 0.06) 0%, transparent 70%);
+    pointer-events: none;
+    z-index: -1;
+  }
+}
+
+@layer utilities {
+  .glow-text {
+    text-shadow: 0 0 20px rgba(0, 245, 212, 0.35);
+  }
+  .cyan-glow {
+    box-shadow: 0 0 20px rgba(0, 245, 212, 0.35);
+  }
+}
